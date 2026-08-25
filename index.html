@@ -3,150 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Tu Opinión Cuenta | Chilaquiles</title>
+  <title>Chill Chilaquil CYA | Enlaces & Opinión</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @keyframes popIn {
-      0% { transform: scale(0.9); opacity: 0; }
+      0% { transform: scale(0.95); opacity: 0; }
       100% { transform: scale(1); opacity: 1; }
     }
-    .animate-pop { animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .animate-pop { animation: popIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
   </style>
 </head>
-<body class="bg-neutral-900 text-neutral-100 min-h-screen flex items-center justify-center p-4 font-sans selection:bg-amber-500 selection:text-black">
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex items-center justify-center p-4 font-sans selection:bg-amber-500 selection:text-black">
 
-  <main class="w-full max-w-sm bg-neutral-800/90 border border-neutral-700/60 rounded-3xl p-6 shadow-2xl backdrop-blur-md relative overflow-hidden">
+  <main class="w-full max-w-sm bg-neutral-900 border border-neutral-800 rounded-3xl p-6 shadow-2xl relative overflow-hidden">
     
-    <!-- Decoración visual de fondo -->
-    <div class="absolute -top-12 -right-12 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
-    <div class="absolute -bottom-12 -left-12 w-32 h-32 bg-orange-600/10 rounded-full blur-2xl pointer-events-none"></div>
+    <!-- Decoración de fondo suave -->
+    <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-orange-600/10 rounded-full blur-2xl pointer-events-none"></div>
 
     <!-- Header / Branding -->
-    <header class="text-center mb-6">
-      <div class="w-16 h-16 bg-gradient-to-tr from-amber-500 to-orange-500 rounded-2xl mx-auto flex items-center justify-center shadow-lg shadow-orange-500/20 mb-3">
-        <i class="fa-solid fa-utensils text-2xl text-neutral-950"></i>
+    <header class="text-center mb-5">
+      <div class="w-16 h-16 bg-gradient-to-tr from-amber-500 to-orange-500 rounded-2xl mx-auto flex items-center justify-center shadow-lg shadow-orange-500/20 mb-2.5 text-2xl">
+        🍲
       </div>
-      <h1 class="text-xl font-bold tracking-tight text-white">Chilaquiles</h1>
-      <p class="text-xs text-neutral-400 mt-0.5">Queremos darte la mejor experiencia</p>
+      <h1 class="text-xl font-bold tracking-tight text-white">Chill Chilaquil CYA</h1>
+      <p class="text-xs text-neutral-400 mt-0.5">Av. Irrigación 142-8 | Celaya</p>
     </header>
 
-    <!-- PASO 1: Calificación Inicial -->
-    <section id="step-rating" class="animate-pop text-center">
-      <h2 class="text-base font-semibold text-neutral-200 mb-4">¿Qué tal estuvieron tus chilaquiles hoy?</h2>
+    <!-- HUB DE ACCIONES / TIPO LINKTREE -->
+    <div id="main-hub" class="space-y-3">
       
-      <!-- Selector de 5 estrellas -->
-      <div class="flex justify-center gap-2 mb-6" id="star-container">
-        <button onclick="handleRating(1)" class="text-3xl text-neutral-600 hover:text-amber-400 focus:outline-none transition-transform active:scale-90" aria-label="1 estrella">★</button>
-        <button onclick="handleRating(2)" class="text-3xl text-neutral-600 hover:text-amber-400 focus:outline-none transition-transform active:scale-90" aria-label="2 estrellas">★</button>
-        <button onclick="handleRating(3)" class="text-3xl text-neutral-600 hover:text-amber-400 focus:outline-none transition-transform active:scale-90" aria-label="3 estrellas">★</button>
-        <button onclick="handleRating(4)" class="text-3xl text-neutral-600 hover:text-amber-400 focus:outline-none transition-transform active:scale-90" aria-label="4 estrellas">★</button>
-        <button onclick="handleRating(5)" class="text-3xl text-neutral-600 hover:text-amber-400 focus:outline-none transition-transform active:scale-90" aria-label="5 estrellas">★</button>
-      </div>
-
-      <p class="text-[11px] text-neutral-400">Toca las estrellas para calificar</p>
-    </section>
-
-    <!-- PASO 2A: Reseña Pública (4 o 5 Estrellas) -->
-    <section id="step-positive" class="hidden animate-pop text-center">
-      <div class="inline-flex p-3 bg-emerald-500/10 text-emerald-400 rounded-full mb-3 text-xl">
-        <i class="fa-solid fa-heart"></i>
-      </div>
-      <h2 class="text-lg font-bold text-white mb-1">¡Nos alegra un montón!</h2>
-      <p class="text-xs text-neutral-300 mb-5">Tu opinión nos ayuda a que más gente conozca el sazón de la casa.</p>
-
-      <!-- Botón Google Maps -->
-      <a id="btn-google-review" href="https://search.google.com/local/writereview?placeid=AQUI_TU_PLACE_ID" target="_blank" rel="noopener noreferrer" 
-         class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-neutral-950 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all mb-3 text-sm">
-        <i class="fa-brands fa-google text-base"></i> Dejar reseña en Google
+      <!-- Botón Destacado: Programa de Recompensas -->
+      <a href="URL_DEL_PROGRAMA_DE_RECOMPENSAS" target="_blank" rel="noopener noreferrer"
+         class="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-neutral-950 font-bold py-3.5 px-4 rounded-2xl flex items-center justify-between shadow-lg shadow-amber-500/15 active:scale-[0.98] transition-all">
+        <span class="flex items-center gap-3 text-sm">
+          <span class="text-lg">🎁</span>
+          <span>Club de Recompensas / Puntos</span>
+        </span>
+        <span class="text-xs bg-neutral-950/20 px-2 py-0.5 rounded-full font-semibold">Entrar</span>
       </a>
 
-      <!-- Redes Sociales Secundarias -->
-      <div class="grid grid-cols-2 gap-2 mt-4">
-        <a href="https://instagram.com/tu_cuenta" target="_blank" rel="noopener noreferrer" class="bg-neutral-700/60 hover:bg-neutral-700 text-neutral-200 py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs border border-neutral-600/40">
-          <i class="fa-brands fa-instagram text-pink-400"></i> Instagram
-        </a>
-        <a href="https://facebook.com/tu_cuenta" target="_blank" rel="noopener noreferrer" class="bg-neutral-700/60 hover:bg-neutral-700 text-neutral-200 py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs border border-neutral-600/40">
-          <i class="fa-brands fa-facebook text-blue-400"></i> Facebook
-        </a>
-      </div>
-
-      <button onclick="showLeadForm('5_stars')" class="mt-5 text-[11px] text-amber-400 underline decoration-amber-400/50 block mx-auto">
-        ¿Quieres un descuento en tu próxima visita? Toca aquí
+      <!-- Botón de Calificar -->
+      <button onclick="openRatingModal()"
+              class="w-full bg-neutral-800 hover:bg-neutral-750 text-white font-semibold py-3 px-4 rounded-2xl flex items-center justify-between border border-neutral-700/60 active:scale-[0.98] transition-all">
+        <span class="flex items-center gap-3 text-sm">
+          <span class="text-lg">⭐</span>
+          <span>Califica tu Experiencia</span>
+        </span>
+        <span class="text-xs text-amber-400 font-medium">Dejar opinión →</span>
       </button>
-    </section>
 
-    <!-- PASO 2B: Feedback Privado (1 a 3 Estrellas) -->
-    <section id="step-negative" class="hidden animate-pop">
-      <div class="text-center mb-4">
-        <div class="inline-flex p-3 bg-amber-500/10 text-amber-400 rounded-full mb-2 text-lg">
-          <i class="fa-solid fa-message"></i>
+      <!-- Botón: Ver Menú Digital -->
+      <a href="URL_DEL_MENU_O_PDF" target="_blank" rel="noopener noreferrer"
+         class="w-full bg-neutral-800 hover:bg-neutral-750 text-neutral-200 py-3 px-4 rounded-2xl flex items-center justify-between border border-neutral-700/60 active:scale-[0.98] transition-all">
+        <span class="flex items-center gap-3 text-sm">
+          <span class="text-lg">📖</span>
+          <span>Ver Menú Digital</span>
+        </span>
+        <span class="text-xs text-neutral-400">Consultar</span>
+      </a>
+
+      <!-- Redes y Delivery en Grid -->
+      <div class="grid grid-cols-2 gap-2.5 pt-1">
+        <a href="https://instagram.com/chillchilaquilcya" target="_blank" rel="noopener noreferrer" 
+           class="bg-neutral-800/80 hover:bg-neutral-800 text-neutral-300 py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs border border-neutral-700/40 active:scale-[0.98] transition-all">
+          <span>📸</span> Instagram
+        </a>
+        <a href="https://bit.ly/4sWRS4i" target="_blank" rel="noopener noreferrer" 
+           class="bg-neutral-800/80 hover:bg-neutral-800 text-neutral-300 py-2.5 px-3 rounded-xl flex items-center justify-center gap-2 text-xs border border-neutral-700/40 active:scale-[0.98] transition-all">
+          <span>🛵</span> Didi Food
+        </a>
+      </div>
+
+    </div>
+
+    <!-- SECCIÓN INTERACTIVA: CALIFICACIÓN (Oculta por defecto) -->
+    <div id="modal-rating" class="hidden">
+      
+      <!-- Paso 1: Estrellas -->
+      <section id="step-stars" class="animate-pop text-center py-2">
+        <button onclick="backToHub()" class="text-xs text-neutral-400 hover:text-white mb-3 block text-left">← Volver al inicio</button>
+        <h2 class="text-base font-semibold text-neutral-200 mb-3">¿Qué tal estuvieron tus chilaquiles?</h2>
+        
+        <div class="flex justify-center gap-2 mb-4">
+          <button onclick="handleRating(1)" class="text-4xl text-neutral-600 hover:text-amber-400 active:scale-90 transition-transform">★</button>
+          <button onclick="handleRating(2)" class="text-4xl text-neutral-600 hover:text-amber-400 active:scale-90 transition-transform">★</button>
+          <button onclick="handleRating(3)" class="text-4xl text-neutral-600 hover:text-amber-400 active:scale-90 transition-transform">★</button>
+          <button onclick="handleRating(4)" class="text-4xl text-neutral-600 hover:text-amber-400 active:scale-90 transition-transform">★</button>
+          <button onclick="handleRating(5)" class="text-4xl text-neutral-600 hover:text-amber-400 active:scale-90 transition-transform">★</button>
         </div>
-        <h2 class="text-base font-bold text-white">Queremos mejorar</h2>
-        <p class="text-xs text-neutral-400">Lamentamos no haber cumplido al 100%. Cuéntanos directo al equipo qué pasó:</p>
-      </div>
+        <p class="text-[11px] text-neutral-400">Toca las estrellas para calificar</p>
+      </section>
 
-      <form id="feedback-form" onsubmit="submitFeedback(event)" class="space-y-3">
-        <textarea id="feedback-comment" rows="3" required placeholder="¿La salsa, el servicio, la temperatura...? Sé totalmente sincero." 
-                  class="w-full bg-neutral-900 border border-neutral-700 rounded-xl p-3 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 transition-colors"></textarea>
-        
-        <input type="tel" id="feedback-phone" placeholder="Tu WhatsApp (opcional, para compensarte)" 
-               class="w-full bg-neutral-900 border border-neutral-700 rounded-xl p-3 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 transition-colors">
+      <!-- Paso 2A: Positivo (4-5 estrellas) -->
+      <section id="step-positive" class="hidden animate-pop text-center py-2">
+        <div class="inline-flex p-3 bg-emerald-500/10 text-emerald-400 rounded-full mb-2 text-2xl">❤️</div>
+        <h2 class="text-lg font-bold text-white mb-1">¡Nos alegra un montón!</h2>
+        <p class="text-xs text-neutral-300 mb-4">Ayúdanos con tu reseña en Google para que más personas conozcan el sabor.</p>
 
-        <button type="submit" id="btn-submit-feedback"
-                class="w-full bg-neutral-200 hover:bg-white text-neutral-950 font-bold py-2.5 px-4 rounded-xl text-xs active:scale-[0.98] transition-all flex items-center justify-center gap-2">
-          <span>Enviar comentario interno</span>
+        <a href="https://search.google.com/local/writereview?placeid=ChIJo7g3v7j20YURhR5P6n3b123" target="_blank" rel="noopener noreferrer" 
+           class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-neutral-950 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 active:scale-[0.98] transition-all text-sm mb-3">
+          ⭐ Dejar reseña en Google Maps
+        </a>
+
+        <button onclick="backToHub()" class="text-xs text-neutral-400 underline decoration-neutral-600 mt-2 block mx-auto">
+          Volver al menú principal
         </button>
-      </form>
-    </section>
+      </section>
 
-    <!-- PASO 3: Captura de Lead / Descuento (Opcional) -->
-    <section id="step-lead" class="hidden animate-pop text-center">
-      <div class="inline-flex p-3 bg-amber-500/10 text-amber-400 rounded-full mb-3 text-lg">
-        <i class="fa-solid fa-gift"></i>
-      </div>
-      <h2 class="text-base font-bold text-white mb-1">¡Gana un 10% de Descuento!</h2>
-      <p class="text-xs text-neutral-400 mb-4">Déjanos tu WhatsApp y te enviaremos tu cupón para tu próximo consumo.</p>
+      <!-- Paso 2B: Feedback Privado (1-3 estrellas) -->
+      <section id="step-negative" class="hidden animate-pop">
+        <div class="text-center mb-3">
+          <div class="inline-flex p-2.5 bg-amber-500/10 text-amber-400 rounded-full mb-1 text-xl">💬</div>
+          <h2 class="text-base font-bold text-white">Queremos mejorar</h2>
+          <p class="text-xs text-neutral-400">Lamentamos no haber cumplido al 100%. Cuéntanos qué pasó:</p>
+        </div>
 
-      <form onsubmit="submitLead(event)" class="space-y-3">
-        <input type="text" id="lead-name" placeholder="Tu Nombre" required
-               class="w-full bg-neutral-900 border border-neutral-700 rounded-xl p-3 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500">
-        
-        <input type="tel" id="lead-phone" placeholder="WhatsApp (10 dígitos)" required
-               class="w-full bg-neutral-900 border border-neutral-700 rounded-xl p-3 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500">
+        <form id="feedback-form" onsubmit="submitFeedback(event)" class="space-y-3">
+          <textarea id="feedback-comment" rows="3" required placeholder="¿La salsa, el servicio, la temperatura...? Sé totalmente sincero." 
+                    class="w-full bg-neutral-950 border border-neutral-700 rounded-xl p-3 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500"></textarea>
+          
+          <input type="tel" id="feedback-phone" placeholder="Tu WhatsApp (opcional, para compensarte)" 
+                 class="w-full bg-neutral-950 border border-neutral-700 rounded-xl p-3 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500">
 
-        <button type="submit" id="btn-submit-lead"
-                class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-neutral-950 font-bold py-2.5 px-4 rounded-xl text-xs active:scale-[0.98] transition-all">
-          Obtener mi Cupón
+          <button type="submit"
+                  class="w-full bg-neutral-200 hover:bg-white text-neutral-950 font-bold py-2.5 px-4 rounded-xl text-xs active:scale-[0.98] transition-all">
+            Enviar comentario directo
+          </button>
+        </form>
+
+        <button onclick="backToHub()" class="text-xs text-neutral-500 underline decoration-neutral-700 mt-3 block mx-auto text-center">
+          Cancelar y volver
         </button>
-      </form>
-    </section>
+      </section>
 
-    <!-- PASO 4: Final / Agradecimiento -->
-    <section id="step-thanks" class="hidden animate-pop text-center py-4">
-      <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full mx-auto flex items-center justify-center text-xl mb-3">
-        <i class="fa-solid fa-check"></i>
-      </div>
-      <h2 class="text-base font-bold text-white mb-1">¡Recibido con éxito!</h2>
-      <p class="text-xs text-neutral-400">Gracias por ayudarnos a ser mejores. ¡Buen provecho!</p>
-    </section>
+      <!-- Agradecimiento Feedback -->
+      <section id="step-thanks" class="hidden animate-pop text-center py-4">
+        <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full mx-auto flex items-center justify-center text-xl mb-2">✅</div>
+        <h2 class="text-base font-bold text-white mb-1">¡Recibido con éxito!</h2>
+        <p class="text-xs text-neutral-400 mb-4">Gracias por ayudarnos a mejorar cada día.</p>
+        <button onclick="backToHub()" class="bg-neutral-800 text-neutral-200 py-2 px-4 rounded-xl text-xs border border-neutral-700">
+          Volver al inicio
+        </button>
+      </section>
 
-    <footer class="mt-6 pt-4 border-t border-neutral-700/40 text-center">
-      <p class="text-[10px] text-neutral-500 font-mono tracking-wider">POWERED BY VECTRUM</p>
+    </div>
+
+    <!-- Footer con el Isotipo de Vectrum (Líneas 230 a 240 aprox, pero ya viene integrado aquí abajo) -->
+    <footer class="mt-6 pt-4 border-t border-neutral-800 flex items-center justify-center gap-2">
+      <svg class="w-5 h-5 text-neutral-500 fill-current" viewBox="0 0 448 288" xmlns="http://www.w3.org/2000/svg">
+        <!-- Aquí pegas los paths de tu vectrumP2.svg -->
+      </svg>
+      <span class="text-[10px] text-neutral-500 font-mono tracking-widest uppercase">Powered by Vectrum</span>
     </footer>
 
   </main>
 
   <script>
-    // URL del Webhook de Google Apps Script (se configura en 2 minutos)
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxWGMJLIRTNPjWvxTdFlZ_C--OIqpylxHFCdyo1y39wR_sLC7uGbvFIuvNWH5ctFXX8gA/exec";
-
     let currentRating = 0;
+
+    function openRatingModal() {
+      document.getElementById('main-hub').classList.add('hidden');
+      document.getElementById('modal-rating').classList.remove('hidden');
+      document.getElementById('step-stars').classList.remove('hidden');
+      document.getElementById('step-positive').classList.add('hidden');
+      document.getElementById('step-negative').classList.add('hidden');
+      document.getElementById('step-thanks').classList.add('hidden');
+    }
+
+    function backToHub() {
+      document.getElementById('modal-rating').classList.add('hidden');
+      document.getElementById('main-hub').classList.remove('hidden');
+    }
 
     function handleRating(stars) {
       currentRating = stars;
-      document.getElementById('step-rating').classList.add('hidden');
-
+      document.getElementById('step-stars').classList.add('hidden');
       if (stars >= 4) {
         document.getElementById('step-positive').classList.remove('hidden');
       } else {
@@ -154,60 +187,27 @@
       }
     }
 
-    function showLeadForm(origin) {
-      document.getElementById('step-positive').classList.add('hidden');
-      document.getElementById('step-lead').classList.remove('hidden');
-    }
-
-    async function submitFeedback(e) {
+    function submitFeedback(e) {
       e.preventDefault();
-      const btn = document.getElementById('btn-submit-feedback');
-      btn.disabled = true;
-      btn.innerText = "Enviando...";
-
       const payload = {
-        tipo: 'QUEJA_INTERNA',
+        tipo: 'FEEDBACK_INTERNO',
         estrellas: currentRating,
         comentario: document.getElementById('feedback-comment').value,
         contacto: document.getElementById('feedback-phone').value || 'No proporcionado',
         fecha: new Date().toLocaleString("es-MX", { timeZone: "America/Mexico_City" })
       };
 
-      sendToGoogleSheets(payload);
+      if (SCRIPT_URL && !SCRIPT_URL.includes("PEGA_AQUI")) {
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).catch(err => console.error(err));
+      }
+
       document.getElementById('step-negative').classList.add('hidden');
       document.getElementById('step-thanks').classList.remove('hidden');
-    }
-
-    async function submitLead(e) {
-      e.preventDefault();
-      const btn = document.getElementById('btn-submit-lead');
-      btn.disabled = true;
-      btn.innerText = "Registrando...";
-
-      const payload = {
-        tipo: 'PROMO_LEAD',
-        estrellas: currentRating,
-        nombre: document.getElementById('lead-name').value,
-        contacto: document.getElementById('lead-phone').value,
-        fecha: new Date().toLocaleString("es-MX", { timeZone: "America/Mexico_City" })
-      };
-
-      sendToGoogleSheets(payload);
-      document.getElementById('step-lead').classList.add('hidden');
-      document.getElementById('step-thanks').classList.remove('hidden');
-    }
-
-    function sendToGoogleSheets(data) {
-      if (!SCRIPT_URL || SCRIPT_URL.includes("AQUI_VA")) {
-        console.log("Mock submission (Configura tu Google Apps Script):", data);
-        return;
-      }
-      fetch(SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      }).catch(err => console.error("Error al enviar:", err));
     }
   </script>
 </body>
